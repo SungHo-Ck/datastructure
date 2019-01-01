@@ -4,14 +4,6 @@
 int binsearch(int[],int,int,int);
 
 int main(void){
-	int list[10]={1,2,5,0,566,7,8,84,23,2};
-	int s,n=10;
-	scanf("%d",&s);
-	find=binsearch(list,s,0,n);
-	if(find > 0)
-		printf("find %d\n");
-	else
-		printf("Not Found\n");
 	return 0;
 }
 
