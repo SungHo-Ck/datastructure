@@ -19,3 +19,4 @@ float sum(float list[], int n){
 		tempsum += list[i];
 	return tempsum;
 }
+
