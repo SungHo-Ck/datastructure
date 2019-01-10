@@ -16,19 +16,16 @@ typedef struct{
 	date dob;
 }human_being;
 
+person1.dob.month=2;
+person1.dob.day=11;
+person1.dob.year=1944;
+
 int humans_equal(human_being person1,human_being person2);
 
 int main(void){
-	human_being person1,person2;
-	printf("Input person1 data(name,age,salary):\n");
-	scanf("%s",person1->name);	
-	scanf("%d",person1->age);	
-	scanf("%f",person1->salary);	
-	printf("Input person2 data(name,age,salary):\n");	
-	scanf("%s",person2->name);	
-	scanf("%d",person2->age);	
-	scanf("%f",person2->salary);	
-
+	//input part
+	//
+	
 	if(humans_equal(person1,person2))
 		printf("The two human beings are the same.\n");
 	else	
