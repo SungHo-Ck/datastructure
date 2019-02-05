@@ -9,7 +9,7 @@ element queue[MAX_QUEUE_SIZE];
 int rear = -1;
 int front = -1;
 
-void addq(element item);
+element deleteq();
 
 int main(void){
 	rear = (rear + 1) % MAX_QUEUE_SIZE;
@@ -17,9 +17,9 @@ int main(void){
 	return 0;
 }
 
-void addq(element item){
-	rear = (rear + 1) % MAX_QUEUE_SIZE;
+element deleteq(){
 	if (front == rear)
-	queueFull();
-	queue[rear] = item;
+		return queueEmpty();
+	front = (front + 1) % MAX_QUEUE_SIZE;
+	return queue[front];
 }
