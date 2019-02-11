@@ -1,0 +1,16 @@
+
+
+precedence getToken(char *symbol, int *n){
+	*symbol = expr[(*n)++];
+	switch (*symbol) {
+		case ¡®(¡¯ : return lparen;
+		case ¡®)¡® : return rparen;
+		case ¡®+¡¯ : return plus;
+		case ¡®-¡¯ : return minus;
+		case ¡®/¡¯ : return divide;
+		case ¡®*¡¯ : return times;
+		case ¡®%¡¯ : return mod;
+		case ¡® ¡¯ : return eos;
+		default : return operand; /* no error checking, default is operand */
+	}
+}
